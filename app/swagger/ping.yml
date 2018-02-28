@@ -1,4 +1,4 @@
-Endpoint returning 'pong'
+Returns 'pong'
 ---
 responses:
   200:

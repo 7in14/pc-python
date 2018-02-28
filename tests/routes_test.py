@@ -15,3 +15,7 @@ def client(request):
 def test_ping(client):
     response = client.get('/ping')
     assert b'pong' in response.data
+
+def test_file(client):
+    response = client.get('/file')
+    assert b'7in14 python' in response.data

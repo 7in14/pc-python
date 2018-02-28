@@ -1,0 +1,6 @@
+Returns README.md file content 
+---
+responses:
+  200:
+    description: README.md content
+    examples: [ { "content": "Lorem ipsum i tak dalej..." } ]
