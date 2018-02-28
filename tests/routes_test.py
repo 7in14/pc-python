@@ -12,6 +12,6 @@ def client(request):
     request.addfinalizer(teardown)
     return test_client
 
-def test_dummy(client):
-    response = client.get('/index')
-    assert b'Dummy app' in response.data
+def test_ping(client):
+    response = client.get('/ping')
+    assert b'pong' in response.data

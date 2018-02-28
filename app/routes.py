@@ -1,6 +1,7 @@
 from app import app
+from flasgger import swag_from
 
-@app.route('/')
-@app.route('/index')
+@app.route('/ping')
+@swag_from('/app/swagger/ping.yml')
 def index():
-    return "Dummy app"
+    return "pong"

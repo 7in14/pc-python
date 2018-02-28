@@ -1,0 +1,6 @@
+Endpoint returning 'pong'
+---
+responses:
+  200:
+    description: Just 'pong'
+    examples: ['pong']
